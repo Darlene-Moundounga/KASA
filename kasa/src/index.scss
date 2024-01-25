@@ -37,7 +37,11 @@ header{
     }
 }
 
-.homeBanner{
+//voir le soulignage des liens
+
+
+
+.Banner{
   width: 1240px;
   height: 223px;
   background-position: center;
@@ -85,7 +89,7 @@ header{
   
   p{
     width: 250px;
-    color: white;
+    color: $color-secondary;
     font-size: 18px;
     z-index: 2;
     position: absolute;
@@ -113,6 +117,43 @@ header{
 .cardContent{
   display: flex;
   align-items: end;
+}
+
+.aboutContent{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.collapseContent{
+  background-color: $color-primary;
+  width: 1023px;
+  border-radius: 5px;
+  color: $color-secondary;
+  margin: 40px 0;
+    
+}
+.collapseClose{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  justify-content: space-between;
+  align-items: center;
+    i{
+      font-size: 32px;
+      margin-right: 20px;
+    }
+}
+
+.collapseOpen{
+  background-color: #F6F6F6;
+  color: $color-primary;
+  height: auto;
+  font-size: 18px;
+  padding: 20px;
+  p{
+    margin: 0;
+  }
 }
 
 footer{
