@@ -21,8 +21,6 @@ function Rooter(){
                 <Route path={`/house/${id}`} element={<House id={id}/>} />
                 <Route path='/error' element={<Error/>}/>
                 <Route path='*' element={<Error/>} />
-                
-                
             </Routes>
             <Footer/>
         </Router>

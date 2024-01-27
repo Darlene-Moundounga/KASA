@@ -1,6 +1,7 @@
 import Collapse from '../Components/Collapse'
 import houses from '../Data/homes.json'
 import Rating from '../Components/Rating/GenerateStars'
+import Carousel from '../Components/Carrousel'
 
 
 export default function House({id}){
@@ -10,7 +11,7 @@ export default function House({id}){
     }
     return (
         <div className="house">
-            <img src={house.cover} alt="test page de modèle" className='bannerHouse'/>
+            <Carousel pictures={house.pictures} />
             <div>
             <div className='allInfo'>
                 <div className='hostDetails'>
