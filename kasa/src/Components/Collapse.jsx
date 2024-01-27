@@ -14,7 +14,7 @@ function Collapse({title,description}){
             </div>
             {isUnrolled && (
                 <div className='collapseOpen'> 
-                    <p>{description}</p>
+                    <ul>{description}</ul>
                 </div>
             )}
         </div>

@@ -37,7 +37,6 @@ header{
     }
 }
 
-//voir le soulignage des liens
 
 
 
@@ -151,8 +150,11 @@ header{
   height: auto;
   font-size: 18px;
   padding: 20px;
-  p{
+  ul{
     margin: 0;
+    list-style-type: none;
+    padding: 0;
+    line-height: 142.6%;
   }
 }
 
@@ -180,6 +182,85 @@ header{
   a{
     color: $color-primary;
     font-size: 18px;
+  }
+}
+
+.house{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $color-primary;
+  margin: 20px 30px;
+  .bannerHouse{
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .allInfo{
+    width: 1240px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+    .hostInfo{
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        width: 93px;
+        margin-bottom: 0;
+      }
+      img{
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+      }
+    }
+    .title{
+      font-size: 36px;
+      margin: 0;
+    }
+    .subtitle{
+      font-size: 18px;
+      margin: 0;
+    }
+    ul{
+      list-style-type: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      li{
+        background-color: $color-primary;
+        color: $color-secondary;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 3px 40px;
+      }
+    }
+  }
+  .collapseHouse{
+    display: flex;
+    gap: 76px;
+    .collapseContent{
+      width: 582px;
+    }
+    
+  
+  }
+}
+
+.hostDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  .rating{
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
   }
 }
 

@@ -139,8 +139,11 @@ header ul a {
   font-size: 18px;
   padding: 20px;
 }
-.collapseOpen p {
+.collapseOpen ul {
   margin: 0;
+  list-style-type: none;
+  padding: 0;
+  line-height: 142.6%;
 }
 
 .errorContent p {
@@ -167,6 +170,82 @@ header ul a {
 .errorContent a {
   color: #FF6060;
   font-size: 18px;
+}
+
+.house {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FF6060;
+  margin: 20px 30px;
+}
+.house .bannerHouse {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.house .allInfo {
+  width: 1240px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.house .allInfo .hostInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+.house .allInfo .hostInfo p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 93px;
+  margin-bottom: 0;
+}
+.house .allInfo .hostInfo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+.house .allInfo .title {
+  font-size: 36px;
+  margin: 0;
+}
+.house .allInfo .subtitle {
+  font-size: 18px;
+  margin: 0;
+}
+.house .allInfo ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+.house .allInfo ul li {
+  background-color: #FF6060;
+  color: #FFF;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 3px 40px;
+}
+.house .collapseHouse {
+  display: flex;
+  gap: 76px;
+}
+.house .collapseHouse .collapseContent {
+  width: 582px;
+}
+
+.hostDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.hostDetails .rating {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
 }
 
 footer {

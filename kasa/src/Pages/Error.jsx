@@ -1,4 +1,3 @@
-
 function Error(){
     return (
         <div className="errorContent">

@@ -8,7 +8,7 @@ function About(){
        <div className="aboutContent">
             <Banner image={aboutBanner}/>
             <div className="collapseSection">
-                {dataAbout.map((collapse)=>
+                {dataAbout.map((collapse) =>
                     <Collapse 
                         key={collapse.title}
                         title={collapse.title}
