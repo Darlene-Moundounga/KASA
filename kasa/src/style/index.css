@@ -318,7 +318,7 @@ footer .mobile {
 
 @media only screen and (max-width: 768px) {
   header {
-    gap: 30px;
+    gap: 5px;
     margin: 20px 0;
   }
   header img {
@@ -357,6 +357,16 @@ footer .mobile {
   }
   .cardContainer .card img, .cardContainer .card {
     height: 255px;
+  }
+  .collapseContent {
+    width: 335px;
+  }
+  .collapseContent h3 {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .collapseContent i {
+    font-size: 30px;
   }
   footer {
     align-items: center;

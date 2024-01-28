@@ -34,7 +34,7 @@ body {
 
 @media only screen and (max-width: 768px) { 
   header{
-    gap: 30px;
+    gap: 5px;
     margin: 20px 0;
     img{
       width: 145px;
@@ -79,8 +79,17 @@ body {
     }
   }
 
-  
-
+  .collapseContent{
+    width: 335px;
+    h3{
+      font-size: 13px;
+      margin: 10px 0;
+    }
+    i{
+      font-size: 30px;
+    }
+  }
+ 
   footer{
    align-items: center;
    height: auto;
