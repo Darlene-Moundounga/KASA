@@ -1,0 +1,24 @@
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    .mobile{
+        display: none;
+    }
+   }
+
+@media only screen and (max-width: 768px) { 
+
+    footer{
+        align-items: center;
+        height: auto;
+
+        .desktop{
+        display:none;
+        }
+        .mobile{
+        display: block;
+
+        }
+    }
+  }

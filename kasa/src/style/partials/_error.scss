@@ -1,0 +1,46 @@
+.errorContent p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.errorContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 139px;
+  color: $color-primary;
+  margin: 139px 0;
+
+  .errorNumber{
+    font-size: 288px;
+    font-weight:700;
+  }
+  .errorText{
+    font-size: 36px;
+  }
+  a{
+    color: $color-primary;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .errorContent{
+    justify-content: center;
+    gap: 113px;
+    margin: 113px 0;
+    text-align: center;
+    .errorNumber{
+      font-size: 96px;
+    }
+    .errorText{
+      font-size: 18px;
+      width: 260px;
+    }
+    a{
+      color: $color-primary;
+      font-size: 14px;
+    }
+  }
+  
+}

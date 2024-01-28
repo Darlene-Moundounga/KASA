@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Logo from '../assets/LOGO.png'
 import {Link } from 'react-router-dom'
-import '../index.css'
 import { useLocation } from 'react-router-dom'
 
 function Header(){

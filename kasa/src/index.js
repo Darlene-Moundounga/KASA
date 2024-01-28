@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import '../src/style/index.css';
 import Rooter from './Components/Rooter';
 
 
