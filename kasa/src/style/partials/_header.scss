@@ -16,3 +16,20 @@ header{
         }
       }
   }
+
+  @media only screen and (max-width: 768px) { 
+    header{
+      gap: 5px;
+      margin: 20px 0;
+      img{
+        width: 145px;
+        height: 46px;
+      }
+      ul{
+        gap: 25px;
+        a{
+          font-size: 12px;
+        }
+      }
+  
+    }}

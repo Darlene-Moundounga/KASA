@@ -39,3 +39,25 @@
         position: absolute;
       }
     }
+
+
+
+@media only screen and (max-width:768px) {
+      .carousel{
+        img{
+          width: 335px;
+          height: 255px;
+        }
+        .vectors {
+          font-size: 24px;
+          i{
+            padding: 0 5px;
+          }
+        }
+        .numbers{
+          display: none;
+        }
+      }
+  
+      
+}

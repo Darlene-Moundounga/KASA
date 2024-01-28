@@ -29,6 +29,22 @@ header ul a {
   font-size: 24px;
 }
 
+@media only screen and (max-width: 768px) {
+  header {
+    gap: 5px;
+    margin: 20px 0;
+  }
+  header img {
+    width: 145px;
+    height: 46px;
+  }
+  header ul {
+    gap: 25px;
+  }
+  header ul a {
+    font-size: 12px;
+  }
+}
 .Banner {
   width: 1240px;
   height: 223px;
@@ -55,6 +71,21 @@ header ul a {
   position: absolute;
 }
 
+@media only screen and (max-width: 768px) {
+  .Banner {
+    width: 335px;
+    height: 111px;
+    justify-content: flex-start;
+  }
+  .Banner img {
+    filter: brightness(0.8);
+  }
+  .Banner h1 {
+    font-size: 24px;
+    width: 217px;
+    margin-left: 16px;
+  }
+}
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -106,6 +137,22 @@ header ul a {
   align-items: end;
 }
 
+@media only screen and (max-width: 768px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    background-color: #FFF;
+    margin: 27px 0;
+    padding: 0;
+  }
+  .cardContainer .card img, .cardContainer .cardTitle, .cardContainer .card {
+    width: 335px;
+  }
+  .cardContainer .card img, .cardContainer .card {
+    height: 255px;
+  }
+}
 .collapseContent {
   background-color: #FF6060;
   width: 1023px;
@@ -148,6 +195,21 @@ header ul a {
   padding: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  .collapseContent {
+    width: 335px;
+  }
+  .collapseContent h3 {
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  .collapseContent i {
+    font-size: 30px;
+  }
+  .collapseContent .collapseOpen {
+    font-size: 12px;
+  }
+}
 .container-chevron i {
   cursor: pointer;
 }
@@ -240,6 +302,57 @@ header ul a {
   font-size: 24px;
 }
 
+@media only screen and (max-width: 768px) {
+  .houseContent .allInfo {
+    width: 335px;
+    flex-direction: column-reverse;
+  }
+  .houseContent .allInfo .hostInfo {
+    align-items: center;
+  }
+  .houseContent .allInfo .hostInfo img {
+    width: 32px;
+    height: 32px;
+  }
+  .houseContent .allInfo .hostInfo p {
+    width: 50px;
+    padding: 0;
+  }
+  .houseContent .allInfo .hostDetails {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .houseContent .allInfo .hostDetails p, .houseContent .allInfo .hostDetails .rating {
+    font-size: 12px;
+  }
+  .houseContent .allInfo .hostDetails .rating {
+    height: 18px;
+  }
+  .houseContent .allInfo .houseInfo .title {
+    font-size: 18px;
+  }
+  .houseContent .allInfo .houseInfo .subtitle {
+    font-size: 14px;
+  }
+  .houseContent .allInfo .houseInfo li {
+    font-size: 10px;
+    padding: 3px 30px;
+  }
+  .houseContent .collapseHouse {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    gap: 0;
+  }
+  .houseContent .collapseHouse .collapseContent {
+    width: 335px;
+    margin: 20px 0;
+  }
+  .houseContent .collapseHouse .collapseContent .collapseOpen {
+    font-size: 12px;
+  }
+}
 .carousel {
   position: relative;
   display: flex;
@@ -281,6 +394,21 @@ header ul a {
   position: absolute;
 }
 
+@media only screen and (max-width: 768px) {
+  .carousel img {
+    width: 335px;
+    height: 255px;
+  }
+  .carousel .vectors {
+    font-size: 24px;
+  }
+  .carousel .vectors i {
+    padding: 0 5px;
+  }
+  .carousel .numbers {
+    display: none;
+  }
+}
 footer {
   background-color: black;
   display: flex;
@@ -290,6 +418,18 @@ footer .mobile {
   display: none;
 }
 
+@media only screen and (max-width: 768px) {
+  footer {
+    align-items: center;
+    height: auto;
+  }
+  footer .desktop {
+    display: none;
+  }
+  footer .mobile {
+    display: block;
+  }
+}
 .errorContent p {
   margin: 0;
   padding: 0;
@@ -317,66 +457,22 @@ footer .mobile {
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    gap: 5px;
-    margin: 20px 0;
+  .errorContent {
+    justify-content: center;
+    gap: 113px;
+    margin: 113px 0;
+    text-align: center;
   }
-  header img {
-    width: 145px;
-    height: 46px;
+  .errorContent .errorNumber {
+    font-size: 96px;
   }
-  header ul {
-    gap: 25px;
+  .errorContent .errorText {
+    font-size: 18px;
+    width: 260px;
   }
-  header ul a {
-    font-size: 12px;
-  }
-  .Banner {
-    width: 335px;
-    height: 111px;
-    justify-content: flex-start;
-  }
-  .Banner img {
-    filter: brightness(0.8);
-  }
-  .Banner h1 {
-    font-size: 24px;
-    width: 217px;
-    margin-left: 16px;
-  }
-  .cardContainer {
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    background-color: #FFF;
-    margin: 27px 0;
-    padding: 0;
-  }
-  .cardContainer .card img, .cardContainer .cardTitle, .cardContainer .card {
-    width: 335px;
-  }
-  .cardContainer .card img, .cardContainer .card {
-    height: 255px;
-  }
-  .collapseContent {
-    width: 335px;
-  }
-  .collapseContent h3 {
-    font-size: 13px;
-    margin: 10px 0;
-  }
-  .collapseContent i {
-    font-size: 30px;
-  }
-  footer {
-    align-items: center;
-    height: auto;
-  }
-  footer .desktop {
-    display: none;
-  }
-  footer .mobile {
-    display: block;
+  .errorContent a {
+    color: #FF6060;
+    font-size: 14px;
   }
 }
 

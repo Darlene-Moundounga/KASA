@@ -23,3 +23,24 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width:768px) {
+  .errorContent{
+    justify-content: center;
+    gap: 113px;
+    margin: 113px 0;
+    text-align: center;
+    .errorNumber{
+      font-size: 96px;
+    }
+    .errorText{
+      font-size: 18px;
+      width: 260px;
+    }
+    a{
+      color: $color-primary;
+      font-size: 14px;
+    }
+  }
+  
+}

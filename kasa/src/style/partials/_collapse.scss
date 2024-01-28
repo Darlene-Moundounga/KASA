@@ -40,3 +40,20 @@
     max-height: 10rem;
     padding: 20px;
   }
+
+  @media only screen and (max-width:768px) {
+    .collapseContent{
+      width: 335px;
+      h3{
+        font-size: 13px;
+        margin: 10px 0;
+      }
+      i{
+        font-size: 30px;
+      }
+      .collapseOpen{
+        font-size: 12px;
+      }
+    }
+    
+  }

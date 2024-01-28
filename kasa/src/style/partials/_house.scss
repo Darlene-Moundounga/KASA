@@ -69,3 +69,70 @@
       font-size: 24px;
     }
   }
+
+
+
+  @media only screen and (max-width: 768px){
+    
+    
+  .houseContent{
+    .allInfo{
+      width: 335px;
+      flex-direction: column-reverse;
+      .hostInfo{
+        align-items: center;
+        img{
+          width: 32px;
+          height: 32px;
+      }
+        p{
+          width: 50px;
+          padding: 0;
+        }
+      }
+      .hostDetails{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        p,.rating{
+          font-size: 12px;
+        }
+       
+        .rating{
+          height: 18px;
+        }
+      }
+      
+      
+      .houseInfo{
+        .title{
+          font-size: 18px;
+        }
+        .subtitle{
+          font-size: 14px;
+        }
+        li{
+          font-size: 10px;
+          padding: 3px 30px;
+        }
+      }
+    }
+    .collapseHouse{
+      display: flex;
+      flex-direction: column;
+      width: 335px;
+      gap: 0;
+      .collapseContent{
+        width: 335px;
+        margin: 20px 0;
+        .collapseOpen{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
+  
+}
+    
+  
