@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.homeContent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.homeContent, .aboutContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
@@ -106,12 +106,6 @@ header ul a {
   align-items: end;
 }
 
-.aboutContent {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .collapseContent {
   background-color: #FF6060;
   width: 1023px;
@@ -154,32 +148,28 @@ header ul a {
   padding: 20px;
 }
 
-.errorContent p {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container-chevron i {
+  cursor: pointer;
 }
 
-.errorContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 139px;
-  color: #FF6060;
-  margin: 139px 0;
-}
-.errorContent .errorNumber {
-  font-size: 288px;
-  font-weight: 700;
-}
-.errorContent .errorText {
-  font-size: 36px;
-}
-.errorContent a {
-  color: #FF6060;
-  font-size: 18px;
+.animated {
+  animation: up 0.45s;
 }
 
+.reverseAnimation {
+  animation: down 0.45s;
+}
+
+@keyframes up {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes down {
+  100% {
+    transform: rotate(180deg);
+  }
+}
 .house {
   display: flex;
   align-items: center;
@@ -295,6 +285,89 @@ footer {
   background-color: black;
   display: flex;
   justify-content: center;
+}
+footer .mobile {
+  display: none;
+}
+
+.errorContent p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.errorContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 139px;
+  color: #FF6060;
+  margin: 139px 0;
+}
+.errorContent .errorNumber {
+  font-size: 288px;
+  font-weight: 700;
+}
+.errorContent .errorText {
+  font-size: 36px;
+}
+.errorContent a {
+  color: #FF6060;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    gap: 30px;
+    margin: 20px 0;
+  }
+  header img {
+    width: 145px;
+    height: 46px;
+  }
+  header ul {
+    gap: 25px;
+  }
+  header ul a {
+    font-size: 12px;
+  }
+  .Banner {
+    width: 335px;
+    height: 111px;
+    justify-content: flex-start;
+  }
+  .Banner img {
+    filter: brightness(0.8);
+  }
+  .Banner h1 {
+    font-size: 24px;
+    width: 217px;
+    margin-left: 16px;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    background-color: #FFF;
+    margin: 27px 0;
+    padding: 0;
+  }
+  .cardContainer .card img, .cardContainer .cardTitle, .cardContainer .card {
+    width: 335px;
+  }
+  .cardContainer .card img, .cardContainer .card {
+    height: 255px;
+  }
+  footer {
+    align-items: center;
+    height: auto;
+  }
+  footer .desktop {
+    display: none;
+  }
+  footer .mobile {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

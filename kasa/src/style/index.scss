@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+$color-primary: #FF6060;
+$color-secondary: #FFF;
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin display {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeContent, .aboutContent{
+  @include display;
+}
+
+@import './partials/header';
+@import './partials/banner';
+@import './partials/card';
+@import './partials/collapse';
+@import './partials/chevron';
+@import './partials/house';
+@import './partials/carousel';
+@import './partials/footer';
+@import './partials/error';
+
+@media only screen and (max-width: 768px) { 
+  header{
+    gap: 30px;
+    margin: 20px 0;
+    img{
+      width: 145px;
+      height: 46px;
+    }
+    ul{
+      gap: 25px;
+      a{
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  .Banner{
+    width: 335px;
+    height: 111px;
+    justify-content: flex-start;
+    img{
+      filter: brightness(0.8);
+    }
+    h1{
+      font-size: 24px;
+      width: 217px;
+      margin-left: 16px;
+    }
+
+  }
+
+  .cardContainer{
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    background-color:$color-secondary ;
+    margin: 27px 0;
+    padding: 0;
+    .card img, .cardTitle,.card{
+      width: 335px;
+    }
+    .card img,.card{
+      height: 255px;
+    }
+  }
+
+  
+
+  footer{
+   align-items: center;
+   height: auto;
+
+    .desktop{
+      display:none;
+    }
+    .mobile{
+      display: block;
+  
+    }
+  }
+}

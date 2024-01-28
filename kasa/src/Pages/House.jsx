@@ -1,7 +1,7 @@
 import Collapse from '../Components/Collapse'
 import houses from '../Data/homes.json'
 import Rating from '../Components/Rating/GenerateStars'
-import Carousel from '../Components/Carrousel'
+import Carousel from '../Components/Carousel/Carousel'
 
 
 export default function House({id}){
@@ -33,13 +33,12 @@ export default function House({id}){
             </div>
             
                 <div className='collapseHouse'>
-                    <div className="collapse1">
+                    <div>
                     <Collapse title="Description" description={house.description} />
                     </div>
-                    <div className="collapse2">
+                    <div>
                     <Collapse title="Equipements" description={
-                        house.equipments.map((equipment, index) => <li key={index}>{equipment}</li>)
-                        } />
+                        house.equipments.map((equipment, index) => <li key={index}>{equipment}</li>)} />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,5 @@
 import {useState} from 'react'
-import Chevron from './Chevron';
-import './chevron.css'
+import Chevron from './Carousel/Chevron';
 
 function Collapse({title,description}){
     const [isUnrolled,setIsUnrolled]= useState(false)    

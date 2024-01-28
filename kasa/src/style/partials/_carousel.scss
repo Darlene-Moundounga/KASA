@@ -1,0 +1,41 @@
+.carousel{
+    position: relative;
+    display: flex;
+      img{
+          width: 1240px;
+          height: 415px;
+          object-fit: cover;
+          border-radius: 25px;
+      }
+      .vectors{
+        position: absolute;
+        z-index: 2;
+        color: $color-secondary;
+        font-size: 100px;
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        
+        i{
+          padding: 35px;
+          cursor: pointer;
+        }
+      }
+      .numbers{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        justify-content: center;
+        align-items: flex-end;
+        color: $color-secondary;
+        font-size: 18px;
+      }
+      .slide{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+      }
+    }

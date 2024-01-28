@@ -1,0 +1,42 @@
+.collapseContent{
+    background-color: $color-primary;
+    width: 1023px;
+    border-radius: 5px;
+    color: $color-secondary;
+    margin: 40px 0;
+    transition: height 200ms;
+      
+  }
+  .collapseClose{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    justify-content: space-between;
+    align-items: center;
+      i{
+        font-size: 32px;
+        margin-right: 20px;
+      }
+  }
+  
+  .collapseOpen{
+    background-color: #F6F6F6;
+    color: $color-primary;
+    max-height: 0;
+    font-size: 18px;
+    padding: 0px;
+    transition: 
+    max-height 500ms, 
+    padding 500ms;
+    overflow: hidden;
+    ul{
+      margin: 0;
+      list-style-type: none;
+      padding: 0;
+      line-height: 142.6%;
+    }
+  }
+  .open {
+    max-height: 10rem;
+    padding: 20px;
+  }
