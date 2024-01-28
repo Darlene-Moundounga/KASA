@@ -10,19 +10,20 @@ function Collapse({title,description}){
     
     return (
         <div className='collapseContent'>
-            <div className='collapseClose' onClick={toggle}>
+            <div className='collapseClose' >
                 <h3>{title}</h3>
+                <div onClick={toggle}>
                 <Chevron/>
-            </div>
-            {isUnrolled && (
-                <div className='collapseOpen'> 
-                    <ul>{description}</ul>
                 </div>
-            )}
+            </div>
+            <div className={`collapseOpen ${isUnrolled && 'open'}`}> 
+            {isUnrolled && (
+                
+                    <ul >{description}</ul> )}
+            </div>
+            
         </div>
     )
 }
 
 export default Collapse
-
-//animer collapse

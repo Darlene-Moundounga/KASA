@@ -136,15 +136,22 @@ header ul a {
 .collapseOpen {
   background-color: #F6F6F6;
   color: #FF6060;
-  height: auto;
+  max-height: 0;
   font-size: 18px;
-  padding: 20px;
+  padding: 0px;
+  transition: max-height 500ms, padding 500ms;
+  overflow: hidden;
 }
 .collapseOpen ul {
   margin: 0;
   list-style-type: none;
   padding: 0;
   line-height: 142.6%;
+}
+
+.open {
+  max-height: 10rem;
+  padding: 20px;
 }
 
 .errorContent p {

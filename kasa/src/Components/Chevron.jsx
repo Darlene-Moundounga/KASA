@@ -1,6 +1,8 @@
+
 export default function Chevron() {
     return <div className='container-chevron'>
-            <i className="fa-solid fa-chevron-up chevron" onClick={ (e) => animated(e.target)}></i>
+            <i className="fa-solid fa-chevron-up chevron" 
+            onClick={ (e) => animated(e.target)}></i>
     </div>
 }
 
@@ -28,3 +30,5 @@ function removeOrAddClass(HTMLElement, classToRemove, classToAdd) {
     HTMLElement.classList.remove(classToRemove)
     HTMLElement.classList.add(classToAdd)
 }
+
+
