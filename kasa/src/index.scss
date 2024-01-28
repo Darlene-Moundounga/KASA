@@ -37,7 +37,6 @@ header{
     }
 }
 
-//voir le soulignage des liens
 
 
 
@@ -131,6 +130,7 @@ header{
   border-radius: 5px;
   color: $color-secondary;
   margin: 40px 0;
+  transition: height 200ms;
     
 }
 .collapseClose{
@@ -148,12 +148,23 @@ header{
 .collapseOpen{
   background-color: #F6F6F6;
   color: $color-primary;
-  height: auto;
+  max-height: 0;
   font-size: 18px;
-  padding: 20px;
-  p{
+  padding: 0px;
+  transition: 
+  max-height 500ms, 
+  padding 500ms;
+  overflow: hidden;
+  ul{
     margin: 0;
+    list-style-type: none;
+    padding: 0;
+    line-height: 142.6%;
   }
+}
+.open {
+  max-height: 10rem;
+  padding: 20px;
 }
 
 .errorContent p {
@@ -161,7 +172,6 @@ header{
   padding: 0;
   box-sizing: border-box;
 }
-
 .errorContent{
   display: flex;
   flex-direction: column;
@@ -180,6 +190,120 @@ header{
   a{
     color: $color-primary;
     font-size: 18px;
+  }
+}
+
+.house{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $color-primary;
+  margin: 20px 30px;
+  
+  .allInfo{
+    width: 1240px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 30px;
+    .hostInfo{
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        width: 93px;
+        margin-bottom: 0;
+      }
+      img{
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+      }
+    }
+    .title{
+      font-size: 36px;
+      margin: 0;
+    }
+    .subtitle{
+      font-size: 18px;
+      margin: 0;
+    }
+    ul{
+      list-style-type: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      li{
+        background-color: $color-primary;
+        color: $color-secondary;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 3px 40px;
+      }
+    }
+  }
+  .collapseHouse{
+    display: flex;
+    gap: 76px;
+    .collapseContent{
+      width: 582px;
+    }
+  }
+}
+
+.hostDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  .rating{
+    display: flex;
+    gap: 8px;
+    font-size: 24px;
+  }
+}
+
+.carousel{
+position: relative;
+display: flex;
+  img{
+      width: 1240px;
+      height: 415px;
+      object-fit: cover;
+      border-radius: 25px;
+  }
+  .vectors{
+    position: absolute;
+    z-index: 2;
+    color: $color-secondary;
+    font-size: 100px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    
+    i{
+      padding: 35px;
+      cursor: pointer;
+    }
+  }
+  .numbers{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: flex-end;
+    color: $color-secondary;
+    font-size: 18px;
+  }
+  .slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
   }
 }
 

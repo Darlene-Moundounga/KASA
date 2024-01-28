@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import Chevron from './Chevron';
+import './chevron.css'
 
 function Collapse({title,description}){
     const [isUnrolled,setIsUnrolled]= useState(false)    
@@ -8,19 +10,20 @@ function Collapse({title,description}){
     
     return (
         <div className='collapseContent'>
-            <div className='collapseClose' onClick={toggle}>
+            <div className='collapseClose' >
                 <h3>{title}</h3>
-                {isUnrolled ? <i className="fa-solid fa-chevron-down"></i> : <i className="fa-solid fa-chevron-up"></i>}
-            </div>
-            {isUnrolled && (
-                <div className='collapseOpen'> 
-                    <p>{description}</p>
+                <div onClick={toggle}>
+                <Chevron/>
                 </div>
-            )}
+            </div>
+            <div className={`collapseOpen ${isUnrolled && 'open'}`}> 
+            {isUnrolled && (
+                
+                    <ul >{description}</ul> )}
+            </div>
+            
         </div>
     )
 }
 
 export default Collapse
-
-//animer collapse

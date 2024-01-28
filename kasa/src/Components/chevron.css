@@ -1,0 +1,26 @@
+.container-chevron i {
+    cursor: pointer;
+}
+
+.animated {
+    animation: up 0.45s ;
+}
+
+.reverseAnimation{
+    animation: down 0.45s;
+}
+
+@keyframes up {
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes down {
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+
