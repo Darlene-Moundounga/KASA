@@ -1,20 +1,22 @@
 .cardContainer{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
+  display: flex;
+  flex-wrap: wrap;
   background-color:#F6F6F6 ;
-  width: 1240px;
+  max-width: 1240px;
+  width: 90%;
   height: auto;
   margin: 50px 0px;
-  padding: 40px;
-  align-items: center;
-  justify-items: center;
+  padding: 40px 0;
   border-radius: 25px;
-  gap: 24px;
+  gap: 55px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .card{
-  width: 280px;
-  height: 280px;
+  width: 340px;
+  height: 340px;
   
   p{
     width: 250px;
@@ -30,15 +32,15 @@
   display: flex;
   background: black;
   position: absolute;
-  width: 280px;
+  width: 340px;
   height: 70px;
   align-items: center;
   opacity: 0.8;
   border-radius: 0 0 10px 10px;
 }
 .card img {
-  width: 280px;
-  height: 280px;
+  width: 340px;
+  height: 340px;
   object-fit: cover;
   border-radius: 10px;
   position:relative;
@@ -48,21 +50,18 @@
   align-items: end;
 }
 
-
-
-@media only screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) { 
   .cardContainer{
-    display: flex;
-    flex-direction: column;
-    width: 335px;
-    background-color:$color-secondary ;
-    margin: 27px 0;
-    padding: 0;
-    .card img, .cardTitle,.card{
+    max-width: 768px;
+    background-color: white;
+    margin: 0;
+    .card, .card img{
       width: 335px;
-    }
-    .card img,.card{
-      height: 255px;
+      height: 255px; 
+
+      .cardTitle{
+        width: 335px;
+      }
     }
   }
 }

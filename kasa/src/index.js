@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../src/style/index.css';
-import Rooter from './Components/Rooter';
+import Rooter from './Components/Rooter/Rooter';
 
 
 

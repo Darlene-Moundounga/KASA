@@ -1,7 +1,7 @@
-import Banner from "../Components/Banner"
-import Collapse from "../Components/Collapse"
-import aboutBanner from '../assets/aboutBanner.png'
-import dataAbout from '../Data/about.json'
+import Banner from "../../Components/Banner/Banner"
+import Collapse from "../../Components/Collapse/Collapse"
+import aboutBanner from '../../assets/aboutBanner.png'
+import dataAbout from '../../Data/about.json'
 
 function About(){
     return (

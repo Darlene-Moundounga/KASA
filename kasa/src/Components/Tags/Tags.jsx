@@ -1,4 +1,4 @@
-import homes from'../Data/homes.json'
+import homes from'../../Data/homes.json'
 
 export default function Tags(home){
    const tags = homes.tags

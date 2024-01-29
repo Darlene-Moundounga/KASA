@@ -1,12 +1,16 @@
 .collapseContent{
-    background-color: $color-primary;
-    width: 1023px;
-    border-radius: 5px;
-    color: $color-secondary;
-    margin: 40px 0;
-    transition: height 200ms;
-      
-  }
+  background-color: $color-primary;
+  border-radius: 5px;
+  color: $color-secondary;
+  margin: 40px 0;
+  transition: height 200ms;
+}
+
+.collapseSection{
+  max-width: 1023px;
+  width: 90%;
+}
+
   .collapseClose{
     display: flex;
     flex-direction: row;
@@ -39,21 +43,4 @@
   .open {
     max-height: 10rem;
     padding: 20px;
-  }
-
-  @media only screen and (max-width:768px) {
-    .collapseContent{
-      width: 335px;
-      h3{
-        font-size: 13px;
-        margin: 10px 0;
-      }
-      i{
-        font-size: 30px;
-      }
-      .collapseOpen{
-        font-size: 12px;
-      }
-    }
-    
   }

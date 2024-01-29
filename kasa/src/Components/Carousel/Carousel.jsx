@@ -6,7 +6,7 @@ export default function Carousel({pictures}){
 
     return(
         <div className='carousel'>
-            <img src={currentImage} alt="actuelle" />
+            <img src={currentImage} alt="Aperçu de la propriété " />
 
                 { images.length > 1? (
                     <div className='slide'>

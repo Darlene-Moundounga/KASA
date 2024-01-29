@@ -1,5 +1,5 @@
-import footer from '../assets/Footer.png' 
-import footerResponsive from '../assets/FooterResponsive.png'
+import footer from '../../assets/Footer.png' 
+import footerResponsive from '../../assets/FooterResponsive.png'
 
 
 function Footer(){
