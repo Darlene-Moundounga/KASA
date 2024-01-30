@@ -2,14 +2,13 @@ import Collapse from '../../Components/Collapse/Collapse'
 import houses from '../../Data/homes.json'
 import Rating from '../../Components/Rating/GenerateStars'
 import Carousel from '../../Components/Carousel/Carousel'
-import Error from '../Error/Error'
 
 
 
 export default function House({id}){
     const house = houses.find((house)=> house.id === id )
     if(house==null){
-        return <Error/>
+        window.location.href="/error"
     } else {
         return (
             <div className="house">

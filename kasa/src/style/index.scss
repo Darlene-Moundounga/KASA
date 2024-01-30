@@ -18,13 +18,16 @@ body {
   flex-direction: column;
 }
 
-#root {
-  overflow: hidden;
+
+.content{
+  text-align: -webkit-center;
+  margin: 20px;
 }
 
 .homeContent, .aboutContent{
   @include display;
 }
+
 
 @import '../Components/Header/header';
 @import '../Components/Banner/banner';

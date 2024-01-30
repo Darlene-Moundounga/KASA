@@ -3,11 +3,8 @@ import ErrorComponent from "./ErrorComponent"
 
 function Error(){
     return (
-        <div className="errorContent">
-            <Layout children={<ErrorComponent/>}/>
-            
-        </div>
-    )
+            <Layout children={<ErrorComponent/>}/>    
+            )
  }
  
  export default Error

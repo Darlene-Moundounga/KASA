@@ -5,8 +5,10 @@ import Footer from '../Footer/Footer';
 const Layout = ( {children} ) => {
     return (
     <React.Fragment>
-        <Header/>
-        {children}
+        <div className="content">
+            <Header/>
+            {children}
+        </div>
         <Footer/>
     </React.Fragment>
     )

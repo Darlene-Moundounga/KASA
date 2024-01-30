@@ -3,6 +3,9 @@ footer{
     display: flex;
     justify-content: center;
     width: 100%;
+    .desktop{
+        width: 100%;
+    }
     .mobile{
         display: none;
     }
