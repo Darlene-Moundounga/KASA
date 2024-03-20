@@ -14,7 +14,7 @@ function Rooter(){
             <Routes>
                 <Route path='/Kasa' element={<Layout children={<Home/>}/> } />
                 <Route path='/about' element={<Layout children={<About/>}/> } />
-                <Route path={`/house/${id}`} element={<Layout children={<House id={id}/>}/> } />
+                <Route path={`/Kasa/house/${id}`} element={<Layout children={<House id={id}/>}/> } />
                 <Route path='*' element={<Error/>} />
             </Routes>
         </Router>
