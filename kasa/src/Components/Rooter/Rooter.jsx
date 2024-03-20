@@ -12,7 +12,7 @@ function Rooter(){
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<Layout children={<Home/>}/> } />
+                <Route path='/Kasa' element={<Layout children={<Home/>}/> } />
                 <Route path='/about' element={<Layout children={<About/>}/> } />
                 <Route path={`/house/${id}`} element={<Layout children={<House id={id}/>}/> } />
                 <Route path='*' element={<Error/>} />
